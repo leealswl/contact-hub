@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   return (
     <div>
-        <div>연락처 추가</div>
+        <div className='contact-add'>연락처 추가</div>
         <Box display="flex" flexDirection="column" alignItems="center" gap={2} >
             
             <TextField 
@@ -37,7 +37,7 @@ const ContactForm = () => {
             variant="outlined" 
             onChange={(e)=>setPhoneNumber(e.target.value)}
         />
-        <Button variant="contained" onClick={handleAddContact}>submit</Button>
+        <Button variant="contained" onClick={handleAddContact}>등록</Button>
         </Box>
         
     </div>

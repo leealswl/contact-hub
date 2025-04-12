@@ -9,8 +9,8 @@ const ContactList = () => {
         <div >연락처 리스트</div>
         {phoneBook.map((item)=>(
             <div key={item.id}>
-            <p>{item.name}</p>
-            <p>{item.phoneNumber}</p>
+            <p>이름 : {item.name} 번호 : {item.phoneNumber}</p>
+            
             </div>
 
     ))}

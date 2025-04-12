@@ -9,7 +9,7 @@ function App() {
   return (
 
     <div className='App'>
-      <h1 className='main-name'>연락처 앱</h1>
+      <h1 className='main-name'>PHONE BOOK</h1>
       
         <Grid container spacing={2}>
           <Grid size={6}>
