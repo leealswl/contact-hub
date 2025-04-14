@@ -14,13 +14,15 @@ const ContactForm = () => {
         //연락처 저장 장소->배열, 연락처 추가
         if(!name.trim() ||(!phoneNumber.trim())) return
         addContact(name,phoneNumber) //first 
+        setName("");
+        setPhoneNumber("");
         
     }
 
   return (
     <div>
         <div className='contact-add'>연락처 추가</div>
-        <Box display="flex" flexDirection="column" alignItems="center" gap={2} >
+        <Box display="flex" flexDirection="column" alignItems="center" marginTop={2} gap={2} >
             
             <TextField 
             id="name"
